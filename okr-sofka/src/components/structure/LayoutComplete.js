@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { experimentalStyled } from '@material-ui/core/styles';
 import Navbar from './NavBar';
-import Sidebar from './Sidebar'
+import Sidebar from './SideBar'
 
 
 const LayoutRoot = experimentalStyled('div')(
@@ -45,18 +45,18 @@ const LayoutComplete = () => {
 
   return (
     <LayoutRoot>
-      <Navbar onMobileNavOpen={() => setMobileNavOpen(true)} />     
+      <Navbar onMobileNavOpen={() => setMobileNavOpen(true)} />
       <Sidebar
         onMobileClose={() => setMobileNavOpen(false)}
         openMobile={isMobileNavOpen}
       />
-        <LayoutWrapper>
+      <LayoutWrapper>
         <LayoutContainer>
           <LayoutContent>
             <Outlet />
           </LayoutContent>
         </LayoutContainer>
-        </LayoutWrapper>     
+      </LayoutWrapper>
     </LayoutRoot>
   );
 };

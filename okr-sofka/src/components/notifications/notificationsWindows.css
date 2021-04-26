@@ -1,0 +1,29 @@
+.ReactModal__Content .ReactModal__Content--after-open{
+    padding: 0;
+}
+
+.headerWelcome{
+    background-color: rgb(240, 149, 14);
+    height: 20px;
+    width: 100%;
+}
+
+.bodyWelcome{
+    padding: 20px;
+    text-align: center;
+}
+
+.imageWelcome{
+    padding: 20px;
+    text-align: center;
+}
+
+.footerWelcome{
+    background-color: rgb(240, 149, 14);;
+    height: 20px;
+    width: 100%;
+}
+
+
+
+

@@ -2,20 +2,18 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ListItems from './ListItemsSideBar'
-import { 
+import {
   Box,
   Button,
   Divider,
   Drawer,
-  Hidden,
-  List
-} from '@material-ui/core';
+  Hidden} from '@material-ui/core';
 
 
 const Sidebar = ({ onMobileClose, openMobile }) => {
   const location = useLocation();
 
-  useEffect(() => {
+  useEffect (() => {
     if (openMobile && onMobileClose) {
       onMobileClose();
     }
@@ -37,16 +35,16 @@ const Sidebar = ({ onMobileClose, openMobile }) => {
           p: 2
         }}
       >
-      <Button color="primary"
-            component="a"
-            href="#"
-            variant="contained">Crear okr</Button>   
+        <Button color="primary"
+          component="a"
+          href="#"
+          variant="contained">Crear okr</Button>
       </Box>
       <Divider />
-      <Box sx={{ p: 2 }}>       
-        <ListItems/>  
+      <Box sx={{ p: 2 }}>
+        <ListItems />
       </Box>
-      <Box sx={{ flexGrow: 1 }} />      
+      <Box sx={{ flexGrow: 1 }} />
     </Box>
   );
 

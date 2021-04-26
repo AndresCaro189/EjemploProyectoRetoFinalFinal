@@ -13,9 +13,7 @@ import Collapse from '@material-ui/core/Collapse';
 import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import {
-  NavLink as RouterLink,
-  matchPath,
-  useLocation
+  NavLink as RouterLink
 } from 'react-router-dom';
 
 

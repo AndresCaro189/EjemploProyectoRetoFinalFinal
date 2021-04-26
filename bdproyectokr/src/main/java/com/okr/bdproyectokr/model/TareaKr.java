@@ -10,7 +10,6 @@ public class TareaKr {
 
     @Id
     private String idTareaKr;
-
     private String nombreTareakr;
     private LocalDate expiracionkr;
 
