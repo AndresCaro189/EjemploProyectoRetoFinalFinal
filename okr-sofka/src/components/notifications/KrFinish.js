@@ -28,18 +28,18 @@ const KrFinish = () => {
             <Modal isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)}
                 style={customStyles}>
-                <header className='headerWelcome'></header>
-                <div className='bodyWelcome'>
+                <header className='headerNotificationWindows' id='headerNotificationWindows'></header>
+                <div className='bodyNotificationWindows' id='bodyNotificationWindows'>
                     <h1>¡ {nombre}! </h1>
                     <h2> {nombreOkr}</h2>
                     <h3>Terminaste el kr {nombrekr}</h3>
                     <p>"Nuestra recompensa se encuentra en el esfuerzo y no en el
                     resultado, un esfuerzo total es una víctoria completa (Mahatma Gandhi)".</p>
                 </div>
-                <div className='imageWelcome'>
+                <div className='imageNotificationWindows' id='imageNotificationWindows'>
                     <img src="https://www.sofka.com.co/wp-content/uploads/2020/08/sofka-logo-gradient-white.png" alt="logo-sofka"></img>
                 </div>
-                <footer className='footerWelcome'></footer>
+                <footer className='footerNotificationWindows' id='footerNotificationWindows'></footer>
             </Modal>
         </div>
     )

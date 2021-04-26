@@ -1,24 +1,20 @@
-.ReactModal__Content .ReactModal__Content--after-open{
-    padding: 0;
-}
-
-.headerWelcome{
+.headerNotificationWindows{
     background-color: rgb(240, 149, 14);
     height: 20px;
     width: 100%;
 }
 
-.bodyWelcome{
+.bodyNotificationWindows{
     padding: 20px;
     text-align: center;
 }
 
-.imageWelcome{
+.imageNotificationWindows{
     padding: 20px;
     text-align: center;
 }
 
-.footerWelcome{
+.footerNotificationWindows{
     background-color: rgb(240, 149, 14);;
     height: 20px;
     width: 100%;
