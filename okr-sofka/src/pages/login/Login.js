@@ -1,7 +1,7 @@
 import React from 'react';
-import Welcome from '../../components/notifications/Welcome'
-import OkrFinish from '../../components/notifications/OkrFinish'
-import KrFinish from '../../components/notifications/KrFinish'
+import Welcome from '../../components/notifications/welcome/Welcome'
+import OkrFinish from '../../components/notifications/okrfinish/OkrFinish'
+import KrFinish from '../../components/notifications/krfinish/KrFinish'
 
 const Login = () => {
     return (

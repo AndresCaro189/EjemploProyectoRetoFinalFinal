@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import './notificationsWindows.css'
+import '../notificationsWindows.scss'
 
-Modal.setAppElement('#root')
 const Welcome = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
+
     let nombre = "Andres Caro"
 
     const customStyles = {
@@ -21,7 +21,7 @@ const Welcome = () => {
     };
 
     return (
-        <div >
+        <div id="root">
             <button onClick={() => setModalIsOpen(true)}>Crear un Usuario</button>
             <Modal isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)}

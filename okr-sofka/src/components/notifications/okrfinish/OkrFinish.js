@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import './notificationsWindows.css'
+import '../notificationsWindows.scss'
 
-Modal.setAppElement('#root')
-const KrFinish = () => {
+const OkrFinish = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false)
     let nombre = "Andres Caro"
-    let nombreOkr = "Estudio de Encuesta"
-    let nombrekr = "Realizar Encuesta a 100 personas"
+    let nombreOkr = "Realizar Encuesta"
 
     const customStyles = {
         content: {
@@ -24,15 +22,14 @@ const KrFinish = () => {
 
     return (
         <div >
-            <button onClick={() => setModalIsOpen(true)}>Terminar Kr</button>
+            <button onClick={() => setModalIsOpen(true)}>Terminar Okr</button>
             <Modal isOpen={modalIsOpen}
                 onRequestClose={() => setModalIsOpen(false)}
                 style={customStyles}>
                 <header className='headerNotificationWindows' id='headerNotificationWindows'></header>
                 <div className='bodyNotificationWindows' id='bodyNotificationWindows'>
                     <h1>¡ {nombre}! </h1>
-                    <h2> {nombreOkr}</h2>
-                    <h3>Terminaste el kr {nombrekr}</h3>
+                    <h2>Terminaste el Okr {nombreOkr}</h2>
                     <p>"Nuestra recompensa se encuentra en el esfuerzo y no en el
                     resultado, un esfuerzo total es una víctoria completa (Mahatma Gandhi)".</p>
                 </div>
@@ -45,4 +42,4 @@ const KrFinish = () => {
     )
 }
 
-export default KrFinish;
+export default OkrFinish;
